@@ -13,7 +13,7 @@ public class HelloCloudServiceController {
     @Value("${officialGreeting}")
     private String officialGreeting;
 
-    @RequestMapping(value="/hello", method = RequestMethod.GET)
+    @RequestMapping(value="/hello", method = RequestMethod.POST)
     public String helloCloud() {
 
         return officialGreeting;
